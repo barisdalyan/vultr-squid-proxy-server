@@ -1,0 +1,11 @@
+version: '2.4'
+services:
+  squid-proxy-server:
+    container_name: squid-proxy-server
+    build:
+      context: .
+      args:
+      - PROXY_USERNAME=
+      - PROXY_PASSWORD=
+    ports:
+      - 3128:3128
